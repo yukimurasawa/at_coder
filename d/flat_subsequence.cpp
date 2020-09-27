@@ -4,17 +4,18 @@ using ll = long long;
 
 int main()
 {
-  int k, n;
-  cin >> k >> n;
-  vector<int> p(n);
+  int n, k;
+  cin >> n >> k;
+  vector<int> a(n);
   for (int i = 0; i < n; i++)
   {
-    cin >> p[i];
+    cin >> a[i];
   }
-  vector<int> c(n);
-  for (int i = 0; i < n; i++)
+
+  for (int i = 1; i < a.size(); i++)
   {
-    cin >> c[i];
+    if (abs(a[i] - a[i - 1]) > 3)
   }
+
   return 0;
 }

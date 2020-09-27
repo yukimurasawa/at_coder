@@ -2,12 +2,12 @@
 using namespace std;
 using ll = long long;
 
+
 int main(){
-  ll n, k;
-  cin >> n >> k;
-  ll a = n%k;
-  ll ans = min(a, k-a);
-  cout << ans << endl;
+  int x;
+  cin >> x;
+  if(x == 0) cout << 1 << endl;
+  else cout << 0 << endl;
 
   return 0;
 }
